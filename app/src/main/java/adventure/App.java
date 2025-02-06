@@ -5,18 +5,21 @@ package adventure;
 
 import java.io.IOException;
 
-import adventure.days.day_7.DaySevenSolution;
-import adventure.days.day_8.DayEightSolution;
+import adventure.days.DayBase;
+import adventure.days.day_1.DayOneSolution;
+import lombok.SneakyThrows;
 
 
 public class App {
-  
 
-    public static void main(String[] args) throws IOException 
+
+    @SneakyThrows
+    public static void main(String[] args) throws IOException
     {
 
-        System.out.println(DayEightSolution.partOneSolution());
-        // System.out.println(DaySevenSolution.partTwoSolution());
+        DayBase day = new DayOneSolution();
+//        System.out.println(day.SolutionPartOne());
+        System.out.println(day.SolutionPartTwo());
 
     }
 }
