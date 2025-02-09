@@ -7,6 +7,7 @@ import java.io.IOException;
 
 import adventure.days.DayBase;
 import adventure.days.day_1.DayOneSolution;
+import adventure.days.day_2.DayTwoSolution;
 import lombok.SneakyThrows;
 
 
@@ -17,7 +18,7 @@ public class App {
     public static void main(String[] args) throws IOException
     {
 
-        DayBase day = new DayOneSolution();
+        DayBase day = new DayTwoSolution();
 //        System.out.println(day.SolutionPartOne());
         System.out.println(day.SolutionPartTwo());
 
